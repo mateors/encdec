@@ -7,11 +7,8 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"errors"
-	"fmt"
 	"hash"
 	"log"
-	"os"
-	"time"
 )
 
 func GenerateRsaKeyPair() (*rsa.PrivateKey, *rsa.PublicKey) {
