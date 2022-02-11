@@ -7,6 +7,7 @@ Encryption &amp; Decryption package for golang
 ## To a specific commit or version
 > go get github.com/mateors/encdec@commitid
 
+```go
 func main() {
 
 	startingTime := time.Now()
@@ -51,3 +52,4 @@ func main() {
 	fmt.Println("TimeTaken:", time.Since(startingTime).Milliseconds(), " ms")
 
 }
+```
