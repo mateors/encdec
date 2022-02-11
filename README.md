@@ -1,6 +1,11 @@
 # encdec
 Encryption &amp; Decryption package for golang
 
+## How to install this package?
+> go get github.com/mateors/encdec
+
+## To a specific commit or version
+> go get github.com/mateors/encdec@commitid
 
 func main() {
 
