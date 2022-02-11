@@ -80,7 +80,7 @@ func ParseRsaPublicKeyFromPemStr(pubPEM string) (*rsa.PublicKey, error) {
 }
 
 
-func encrypt(publicKey *rsa.PublicKey, sourceText, label []byte) (encryptedText []byte) {
+func Encrypt(publicKey *rsa.PublicKey, sourceText, label []byte) (encryptedText []byte) {
 	var err error
 	var md5_hash hash.Hash = md5.New()
 	//md5_hash = md5.New()
@@ -90,7 +90,7 @@ func encrypt(publicKey *rsa.PublicKey, sourceText, label []byte) (encryptedText 
 	return
 }
 
-func decrypt(privateKey *rsa.PrivateKey, encryptedText, label []byte) (decryptedText []byte) {
+func Decrypt(privateKey *rsa.PrivateKey, encryptedText, label []byte) (decryptedText []byte) {
 	var err error
 	var md5_hash hash.Hash = md5.New()
 	//md5_hash = md5.New()
