@@ -7,6 +7,8 @@ Encryption &amp; Decryption package for golang
 ## To a specific commit or version
 > go get github.com/mateors/encdec@commitid
 
+> go get -u github.com/mateors/encdec@65aff71cffb737455508e88529f87106dd6f331d
+
 ```go
 func main() {
 
